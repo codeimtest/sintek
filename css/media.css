@@ -203,9 +203,37 @@ footer{
 
 /*fix buttons hover*/
 @media (hover: hover) {
-
+	.btn:hover{
+		opacity: 0.8;
+		color: #fff;
+	}
+	.first_screen_slider_nav>div:hover{
+		opacity: 0.8;
+	}
+	.works_item:hover{
+		color: #fff;
+		opacity: 0.8;
+	}
+	footer .f_widget ul li a:hover{
+		color: #fff;
+		opacity: 0.8;
+	}
 }
 
 @media (hover: none){
-
+	.btn:active{
+		opacity: 0.8;
+		color: #fff;
+	}
+	.first_screen_slider_nav>div:active{
+		opacity: 0.8;
+	}
+	.works_item:active{
+		opacity: 0.8;
+		color: #fff;
+	}
+	footer .f_widget ul li a:active{
+		color: #fff;
+		opacity: 0.8;
+	}
 }

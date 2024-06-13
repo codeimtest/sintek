@@ -426,6 +426,7 @@ aside{
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
+	transition: var(--transition);
 }
 
 .first_screen_slider_nav>div+* {
@@ -472,6 +473,7 @@ aside{
 	padding: 40px;
 	text-decoration: none;
 	height: 100%;
+	transition: var(--transition);
 }
 .works_item img{
 	object-fit: contain;
@@ -580,6 +582,7 @@ footer .f_widget ul li a{
 	text-decoration: none;
 	display: flex;
 	align-items: center;
+	transition: var(--transition);
 }
 footer .f_widget ul li + *{
 	margin-top: 10px;
