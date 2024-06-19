@@ -50,7 +50,7 @@ $('.aside_menu a').click(function(){
 })
 
 //current link
-$('header nav ul li').click(function(){
+$('header nav ul li a').click(function(){
 	$('header nav ul li').removeClass('current')
-	$(this).addClass('current')
+	$(this).parent().addClass('current')
 })

@@ -3,6 +3,7 @@
 :root {
 	--accent: #a506d0;
 	--text: #111;
+	--gray: rgb(242 242 242);
 	--gradient: linear-gradient(135deg, #b10a1d 0%, #a506d0 100%);
 	--regular-text: 16px;
 	--transition: 0.2s ease all;
@@ -278,7 +279,9 @@ section form button{
 	min-width: 260px
 }
 /* USER STYLES */
-
+.page_template{
+	padding-top: 60px;
+}
 /* header */
 header {
 	position: absolute;
@@ -289,6 +292,10 @@ header {
 	background: transparent;
 	z-index: 99;
 	transition: var(--transition);
+}
+header.static_header{
+	background: var(--text);
+	padding: 10px 0;
 }
 header.active{
 	position: fixed;
@@ -437,7 +444,7 @@ aside{
 	overflow: hidden;
 }
 
-.first_screen_slider img {
+.first_screen_slider img,.first_screen_image img {
 	width: 100%;
 	height: 350px;
 	object-fit: contain;
@@ -521,6 +528,7 @@ aside{
 	max-width: 326px;
 	width: 100%;
 	object-fit: contain;
+	height: 220px;
 }
 /* promo */
 .promo_bg{
@@ -589,4 +597,13 @@ footer .f_widget ul li + *{
 }
 footer .f_widget ul li a svg{
 	margin-right: 8px;
+}
+/* about_widget */
+.about_widget{
+	background: var(--gray);
+	border-radius: var(--radius-alt);
+	padding: 20px;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
 }
