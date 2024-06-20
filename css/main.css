@@ -425,7 +425,7 @@ aside{
 	padding-top: 120px;
 }
 
-.first_screen_slider_nav>div {
+.first_screen_slider_nav>div,.slider_nav>div {
 	background: rgba(217, 217, 217, 0.08);
 	width: 38px;
 	height: 38px;
@@ -435,7 +435,12 @@ aside{
 	border-radius: 50%;
 	transition: var(--transition);
 }
-
+.slider_nav>div{
+	background: var(--text);
+}
+.slider_nav>div+*{
+	margin-left: 10px;
+}
 .first_screen_slider_nav>div+* {
 	margin-left: 10px;
 }
@@ -606,4 +611,13 @@ footer .f_widget ul li a svg{
 	display: flex;
 	flex-flow: column;
 	height: 100%;
+}
+/* works slider */
+.works_carousel{
+	overflow: hidden;
+}
+.works_carousel img{
+	height: 400px;
+	width: 100%;
+	object-fit: contain;
 }

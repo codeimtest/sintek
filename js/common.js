@@ -22,7 +22,20 @@ var swiper = new Swiper(".first_screen_slider", {
     delay: 4000,
   },
 });
-
+var swiper = new Swiper(".works_carousel", {
+	slidesPerView: 2,
+	loop: false,
+	watchSlidesProgress: true,
+	spaceBetween: 10,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: ".next-btn",
+		prevEl: ".prev-btn",
+	},
+});
 // Header toggle
 $(window).scroll(function() {
 	var scroll = $(window).scrollTop();
